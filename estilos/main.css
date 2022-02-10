@@ -1,0 +1,158 @@
+.tamaA {
+  font-size: 80px;
+}
+
+.tamaB {
+  font-size: 30px;
+}
+
+.tamaC {
+  font-size: 20px;
+}
+
+.backP--rojo {
+  background-color: red;
+}
+
+.backP--amarillo {
+  background-color: yellow;
+}
+
+.backP--blanco {
+  background-color: white;
+}
+
+.backP--naranja {
+  background-color: orange;
+}
+
+.frecQuest .frecQuest__h1 {
+  color: seagreen;
+  font-family: initial;
+}
+
+.frecQuest .frecQuest__h2 {
+  color: cadetblue;
+  font-family: monospace;
+}
+
+@media only screen and (max-width: 768px) {
+  .frecQuest {
+    background-color: #86571a;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .frecQuest {
+    background-color: #217436;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: #04293A;
+  color: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.footer .footer__img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer .footer__h2 {
+  color: #D4AC2B;
+}
+
+.contentFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-top: solid 5px #D4AC2B;
+  border-bottom: solid 5px #D4AC2B;
+  border-left: solid 5px #D4AC2B;
+  border-right: solid 5px #D4AC2B;
+}
+
+.nav .nav__subMenu {
+  display: none;
+  position: absolute;
+  background-color: black;
+}
+
+.nav .nav__subMenu .subMenu__li {
+  display: block;
+  position: relative;
+  top: 10px;
+  padding: 15px 12px;
+}
+
+.nav .nav__p {
+  font-style: italic;
+}
+
+.pedidos {
+  background-color: #98b1c2;
+}
+
+.pedidos .pedidos__h2 {
+  color: black;
+  font-family: sans-serif;
+}
+
+.form {
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(50%, #403b16), color-stop(96%, #797209));
+  background: linear-gradient(90deg, #020024 0%, #403b16 50%, #797209 96%);
+}
+
+.form .form__h2 {
+  color: white;
+}
+
+.productosIndex .productosIndex__h2 {
+  color: #4d0101;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sobreNosotros .sobreNosotros__h1 {
+  color: royalblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sobreNosotros .sobreNosotros__h2 {
+  color: seagreen;
+  font-family: monospace;
+}
+
+.sobreNosotros .sobreNosotros__p {
+  font-size: medium;
+  font-family: initial;
+}
+/*# sourceMappingURL=main.css.map */

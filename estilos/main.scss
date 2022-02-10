@@ -1,0 +1,139 @@
+$tamano: 60px;
+.tamaA{
+    font-size: $tamano+20;
+}
+.tamaB{
+    font-size: $tamano/2;
+}
+.tamaC{
+    font-size: $tamano/3;
+}
+
+$colores: (
+    "rojo": red,
+    "amarillo": yellow,
+    "blanco":white,
+    "naranja": orange,
+);
+
+@each $name, $color in $colores {
+    .backP--#{$name}{
+        background-color: $color;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: 768px){
+        @content;
+    }
+}
+@mixin mobile {
+    @media only screen and (max-width: 320px){
+        @content;
+    }
+}
+
+.frecQuest{
+    .frecQuest__h1{
+        color: seagreen;
+        font-family: initial;
+    }
+    .frecQuest__h2{
+        color: cadetblue;
+        font-family: monospace;
+    }
+    @include tablet{
+        background-color: rgb(134, 87, 26);
+    }
+    @include mobile{
+        background-color: rgb(33, 116, 54);
+    }
+}
+
+.footer{
+    width: 100%;
+    background-color: #04293A;
+    color: white;
+    display: inline-flex;
+    .footer__img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+    .footer__h2 {
+        color: #D4AC2B;
+    }
+    .footer__li{
+        padding-top: 25rem;
+        padding-bottom: 25rem;
+    }
+}
+
+.contentFlex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border-top: solid 5px #D4AC2B;
+    border-bottom: solid 5px #D4AC2B;
+    border-left: solid 5px #D4AC2B;
+    border-right: solid 5px #D4AC2B;
+    .nav__subMenu{
+        display: none;
+        position: absolute;
+        background-color: black;
+        .subMenu__li {
+            display: block;
+            position: relative;
+            top: 10px;
+            padding: 15px 12px;
+        }
+    }
+    .nav__p{
+        font-style: italic;
+    }
+}
+
+.pedidos{
+    background-color: #98b1c2;
+    .pedidos__h2{
+        color: black;
+        font-family: sans-serif;
+    }
+}
+
+.form{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,59,22,1) 50%, rgba(121,114,9,1) 96%);
+    .form__h2{
+        color: white;
+    }
+}
+
+.productosIndex{
+    .productosIndex__h2{
+        color: rgb(77, 1, 1);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+.sobreNosotros{
+    .sobreNosotros__h1{
+        color: royalblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .sobreNosotros__h2{
+        color: seagreen;
+        font-family: monospace;
+    }
+    .sobreNosotros__p{
+        font-size: medium;
+        font-family: initial;
+    }
+}

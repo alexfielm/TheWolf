@@ -3,6 +3,7 @@
 @import "./parciales/main";
 @import "./parciales/section";
 
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
 header{
     grid-area: header;
@@ -74,11 +75,152 @@ $colores: (
 
 @mixin tablet {
     @media only screen and (max-width: 768px){
-        @content;
+        .gridHome{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(5,auto);
+            grid-template-areas: 
+                "header"
+                "video"
+                "product"
+                "form"
+                "footer"  
+            ;
+        }
+        #carouselExampleIndicators{
+            height: 480px;
+            width: 350px;
+        }
+        .gridVerano{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(4,auto);
+            grid-template-areas: 
+                "header"
+                "veranoDestacado"
+                "veranoProductos"
+                "footer"
+            ;
+        }
+        .gridInvierno{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(3,auto);
+            grid-template-areas: 
+                "header"
+                "inviernoProductos"
+                "footer"
+            ;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(5,auto);
+            grid-template-areas:  
+                "header"
+                "imgProd"
+                "pedido"
+                "talles"
+                "footer";
+        }
+        .gridFaq{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(3,auto);
+            grid-template-areas: 
+                "header"
+                "faq"
+                "footer"
+            ;
+        }
+        .gridSobre{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(3,auto);
+            grid-template-areas: 
+                "header"
+                "sobreNosotros"
+                "footer"
+            ;
+        }
+    }
+    @content;
     }
 }
 @mixin mobile {
     @media only screen and (max-width: 320px){
+        .gridHome{
+            display: grid;
+            grid-template-columns: 100vw;
+            grid-template-rows: repeat(5,auto);
+            grid-template-areas: 
+            "header"
+            "video"
+            "product"
+            "form"
+            "footer"
+            ;
+        }
+        #carouselExampleIndicators{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            width: 250px;
+            height: 380px;
+        }
+        .gridVerano{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(4,auto);
+            grid-template-areas: 
+                "header"
+                "veranoDestacado"
+                "veranoProductos"
+                "footer"
+            ;
+        }
+        .gridInvierno{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(3,auto);
+            grid-template-areas: 
+                "header"
+                "inviernoProductos"
+                "footer"
+            ;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(5,auto);
+            grid-template-areas:  
+                "header"
+                "imgProd"
+                "pedido"
+                "talles"
+                "footer";
+        }
+        .gridFaq{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(3,auto);
+            grid-template-areas: 
+                "header"
+                "faq"
+                "footer"
+            ;
+        }
+        .gridSobre{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(3,auto);
+            grid-template-areas: 
+                "header"
+                "sobreNosotros"
+                "footer"
+            ;
+        }
+    }
         @content;
     }
 }
@@ -187,3 +329,75 @@ $colores: (
         font-family: initial;
     }
 }
+ 
+@media only screen and (min-width: 1024px){
+    .gridHome{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+            "header"
+            "video"
+            "product"
+            "form"
+            "footer"  
+        ;
+    }
+    #carouselExampleIndicators{
+        height: 480px;
+        width: 350px;
+    }
+    .gridVerano{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+            "header"
+            "veranoDestacado"
+            "veranoProductos"
+            "footer"
+        ;
+    }
+    .gridInvierno{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+            "header"
+            "inviernoProductos"
+            "footer"
+        ;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas:  
+            "header"
+            "imgProd"
+            "pedido"
+            "talles"
+            "footer";
+    }
+    .gridFaq{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+            "header"
+            "faq"
+            "footer"
+        ;
+    }
+    .gridSobre{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+            "header"
+            "sobreNosotros"
+            "footer"
+        ;
+    }
+}
+

@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 nav a{
     color: white;
 }
@@ -14,12 +21,7 @@ ol{
 h1{
     color: #D4AC2B;
 }
-table {
-    background-color:rgb(190, 190, 190);;
-}
-table th {
-    background-color: #98b1c2;
-}
+
 header nav ul li{
     color: white;
     list-style: none;

@@ -1,3 +1,52 @@
+@import "./parciales/botones";
+@import "./parciales/header";
+@import "./parciales/section";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+header{
+    grid-area: header;
+}
+main section#imgProd{
+    grid-area: imgProd;
+}
+main section#pedido{
+    grid-area: pedido;
+    align-content: center;
+}
+main section#talles{
+    grid-area: talles;
+}
+main section#informacion{
+    grid-area: informacion;
+    display: flex;
+}
+main section#veranoProductos{
+    grid-area: veranoProductos;
+    display: flex;
+}
+footer{
+    grid-area: footer;
+}
+
+.tableTd{
+    background-color: #728b9c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $tamano: 60px;
 .tamaA{
     font-size: $tamano+20;

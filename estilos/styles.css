@@ -1,106 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
-/*
-.gridHome{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(5,auto);
-    grid-template-areas: 
-        "nav"
-        "video"
-        "product"
-        "form"
-        "footer"  
-    ;
-}
-*/
-/*.gridVerano{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4,auto);
-    grid-template-areas: 
-        "header"
-        "veranoDestacado"
-        "veranoProductos"
-        "footer"
-    ;
-}
-*/
-header{
-    grid-area: header;
-}
-main section#imgProd{
-    grid-area: imgProd;
-}
-main section#pedido{
-    grid-area: pedido;
-    align-content: center;
-}
-main section#talles{
-    grid-area: talles;
-}
-main section#informacion{
-    grid-area: informacion;
-    display: flex;
-}
-main section#veranoProductos{
-    grid-area: veranoProductos;
-    display: flex;
-}
-footer{
-    grid-area: footer;
-}
 
 
 
-.pruebaa {
-    border: 1px solid black
-}
-
-.imgPortada {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    height: 450px;
-    width: 350px;
-}
-/* CODIGO PARA NAVEGADOR CON DEGRADE, LO COMENTE PARA HACER UNOS CAMBIOS
-nav:hover{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,59,22,1) 50%, rgba(121,114,9,1) 96%);
-}
-.navContainer li:hover ul {
-    display: block;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,59,22,1) 50%, rgba(121,114,9,1) 96%);
-}*/
-
-.imgColeccion{
-    width: 250px;
-    height: 380px;
-}
 
 
-.textoTachado {
-    text-decoration: line-through;
-}
-.textoNegrita {
-    font-weight: bold;
-}
 
-.tableTd{
-    background-color: #728b9c;
-}
-.backImg {
-    background-image: url("https://www.logolynx.com/images/logolynx/70/70cd2aabba55b7b7321b4583ef9bf565.jpeg");
-    background-position: center;
-}
 
-body {
-    background-color: rgb(235, 235, 235);
-}
-section {
-    margin: 50px 200px 50px 200px;
-}
 nav a{
     color: white;
 }
@@ -357,15 +261,7 @@ main ol li {
     }
 }
 
-.botonDegradado{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,59,22,1) 50%, rgba(121,114,9,1) 96%);
-}
 
-.botonDegradado:hover{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg,  rgba(121,114,9,1) 0%,  rgba(64,59,22,1) 50%, rgba(2,0,36,1) 96%);
-}
 
 main{
     background: rgb(219,218,228);

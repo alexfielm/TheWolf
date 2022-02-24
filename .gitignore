@@ -1,0 +1,5 @@
+.gitignore
+
+git remote add origin https://github.com/alexfielm/TheWolf.git
+git branch -M Respaldo
+git push -u origin Respaldo

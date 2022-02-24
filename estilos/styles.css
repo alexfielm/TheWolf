@@ -263,11 +263,3 @@ main ol li {
 
 
 
-main{
-    background: rgb(219,218,228);
-    background: linear-gradient(90deg, rgba(219,218,228,1) 0%, rgba(185,185,181,1) 46%, rgba(214,231,122,1) 100%);
-}
-main:hover{
-    background: rgb(219,218,228);
-    background: linear-gradient(90deg, rgba(214,231,122,1) 0%, rgba(185,185,181,1) 46%, rgba(219,218,228,1) 100%);
-}

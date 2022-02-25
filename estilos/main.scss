@@ -5,6 +5,7 @@
 @import "./parciales/media";
 @import "./parciales/sobreNosotros";
 @import "./parciales/tablas";
+@import "./parciales/footer"
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
 
@@ -306,24 +307,6 @@ $colores: (
     }
 }
 
-.footer{
-    width: 100%;
-    background-color: #04293A;
-    color: white;
-    display: inline-flex;
-    .footer__img {
-        width: 30px;
-        height: 30px;
-        object-fit: cover;
-    }
-    .footer__h2 {
-        color: #D4AC2B;
-    }
-    .footer__li{
-        padding-top: 25rem;
-        padding-bottom: 25rem;
-    }
-}
 
 .contentFlex {
     display: flex;

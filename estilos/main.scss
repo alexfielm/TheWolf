@@ -5,7 +5,7 @@
 @import "./parciales/media";
 @import "./parciales/sobreNosotros";
 @import "./parciales/tablas";
-@import "./parciales/footer"
+@import "./parciales/footer";
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
 
@@ -248,24 +248,6 @@ main section#veranoProductos{
 footer{
     grid-area: footer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $tamano: 60px;
 .tamaA{
     font-size: $tamano+20;

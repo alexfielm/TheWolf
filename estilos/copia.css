@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
-/*
+/*@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
 .gridHome{
     display: grid;
     grid-template-columns: 100%;
@@ -12,7 +12,7 @@
         "footer"  
     ;
 }
-*/
+
 .gridVerano{
     display: grid;
     grid-template-columns: 100%;
@@ -120,7 +120,7 @@ nav:hover{
     display: block;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,59,22,1) 50%, rgba(121,114,9,1) 96%);
-}*/
+}
 .subMenu{
     display: none;
     position: absolute;
@@ -193,7 +193,7 @@ h1{
 }
 /*main p {
     background-color: rgb(86, 97, 143);
-    color: white; }*/
+    color: white; }
 table {
     background-color:rgb(190, 190, 190);;
 }
@@ -292,4 +292,4 @@ footer h2 {
         height: 480px;
         width: 350px;
     }
-}
+}*/

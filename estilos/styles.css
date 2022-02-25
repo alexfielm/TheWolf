@@ -1,3 +1,43 @@
+header nav ul li{
+    color: white;
+    list-style: none;
+    display: inline;
+    font-size: 25px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+nav ul li{
+    color: white;
+    list-style: none;
+    display: inline;
+    font-size: 25px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+header{
+    grid-area: header;
+}
+main section#imgProd{
+    grid-area: imgProd;
+}
+main section#pedido{
+    grid-area: pedido;
+    align-content: center;
+}
+main section#talles{
+    grid-area: talles;
+}
+main section#informacion{
+    grid-area: informacion;
+    display: flex;
+}
+main section#veranoProductos{
+    grid-area: veranoProductos;
+    display: flex;
+}
+footer{
+    grid-area: footer;
+}
 @media only screen and (min-width: 1024px){
     .gridHome{
         display: grid;
@@ -212,19 +252,3 @@
             ;
         }
     }
-header nav ul li{
-    color: white;
-    list-style: none;
-    display: inline;
-    font-size: 25px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-nav ul li{
-    color: white;
-    list-style: none;
-    display: inline;
-    font-size: 25px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}

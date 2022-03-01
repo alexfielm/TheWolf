@@ -1,18 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap");
-.boton .botonDegradado {
-  background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(50%, #403b16), color-stop(96%, #797209));
-  background: linear-gradient(90deg, #020024 0%, #403b16 50%, #797209 96%);
-}
-
-.boton .botonDegradado:hover {
-  background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#797209), color-stop(50%, #403b16), color-stop(96%, #020024));
-  background: linear-gradient(90deg, #797209 0%, #403b16 50%, #020024 96%);
-}
-
-body {
-  background-color: #ebebeb;
+.headerLi {
+  list-style: none;
+  display: inline;
+  font-size: 25px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .section {
@@ -20,94 +12,24 @@ body {
   margin-bottom: 2rem;
 }
 
-header {
-  grid-area: header;
+.sobreNosotros .sobreNosotros__h1 {
+  color: royalblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-main section#imgProd {
-  grid-area: imgProd;
-}
-
-main section#pedido {
-  grid-area: pedido;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-main section#talles {
-  grid-area: talles;
-}
-
-main section#informacion {
-  grid-area: informacion;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-main section#veranoProductos {
-  grid-area: veranoProductos;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-footer {
-  grid-area: footer;
-}
-
-.tableTd {
-  background-color: #728b9c;
-}
-
-.tamaA {
-  font-size: 80px;
-}
-
-.tamaB {
-  font-size: 30px;
-}
-
-.tamaC {
-  font-size: 20px;
-}
-
-.backP--rojo {
-  background-color: red;
-}
-
-.backP--amarillo {
-  background-color: yellow;
-}
-
-.backP--blanco {
-  background-color: white;
-}
-
-.backP--naranja {
-  background-color: orange;
-}
-
-.frecQuest .frecQuest__h1 {
+.sobreNosotros .sobreNosotros__h2 {
   color: seagreen;
-  font-family: initial;
-}
-
-.frecQuest .frecQuest__h2 {
-  color: cadetblue;
   font-family: monospace;
 }
 
-@media only screen and (max-width: 768px) {
-  .frecQuest {
-    background-color: #86571a;
-  }
+.sobreNosotros .sobreNosotros__p {
+  font-size: medium;
+  font-family: initial;
 }
 
-@media only screen and (max-width: 320px) {
-  .frecQuest {
-    background-color: #217436;
-  }
+.table {
+  border-color: black;
+  background-color: #413c3c;
 }
 
 .footer {
@@ -135,6 +57,19 @@ footer {
   padding-bottom: 25rem;
 }
 
+.boton {
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(50%, #403b16), color-stop(96%, #797209));
+  background: linear-gradient(90deg, #020024 0%, #403b16 50%, #797209 96%);
+  border-color: white;
+}
+
+.boton :hover {
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#797209), color-stop(50%, #403b16), color-stop(96%, #020024));
+  background: linear-gradient(90deg, #797209 0%, #403b16 50%, #020024 96%);
+}
+
 .contentFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,42 +81,6 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-}
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  border-top: solid 5px #D4AC2B;
-  border-bottom: solid 5px #D4AC2B;
-  border-left: solid 5px #D4AC2B;
-  border-right: solid 5px #D4AC2B;
-}
-
-.nav .nav__subMenu {
-  display: none;
-  position: absolute;
-  background-color: black;
-}
-
-.nav .nav__subMenu .subMenu__li {
-  display: block;
-  position: relative;
-  top: 10px;
-  padding: 15px 12px;
-}
-
-.nav .nav__p {
-  font-style: italic;
 }
 
 .pedidos {
@@ -201,25 +100,5 @@ footer {
 
 .form .form__h2 {
   color: white;
-}
-
-.productosIndex .productosIndex__h2 {
-  color: #4d0101;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.sobreNosotros .sobreNosotros__h1 {
-  color: royalblue;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.sobreNosotros .sobreNosotros__h2 {
-  color: seagreen;
-  font-family: monospace;
-}
-
-.sobreNosotros .sobreNosotros__p {
-  font-size: medium;
-  font-family: initial;
 }
 /*# sourceMappingURL=main.css.map */

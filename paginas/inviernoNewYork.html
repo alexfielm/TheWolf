@@ -40,9 +40,34 @@
             </nav>
         </header>
         <main>
-            <section id="imgProd" class="section contentFlex container-fluid">
-                <h1 class="contentFlex container-fluid" style="padding-bottom: 1rem; color: black;">Sueter New York</h1>
-                <img src="../assets/inviernoSueterNew-prueba.jpg" alt="sueter new york" style="object-fit: crop;">
+            <section id="video" class="section contentFlex container" style="padding-bottom: 2rem;">
+                <h1 class="container-fluid contentFlex" style="color: black; padding-bottom: 1rem;">Sueter New York</h1>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../assets/remeraLisa/remeraNegro.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/remeraLisa/remeraBlanco.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/remeraLisa/remeraGris.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </section>
             <section id="pedido"class="section pedidos container-fluid" style="padding-top: 1rem; padding-bottom: 1rem;">
                 <form action="" method="get" enctype="text/plain" class="pedidos">
@@ -57,16 +82,12 @@
                             <option value="XXL">XXL</option>
                         </select>
                         <strong><p>Seleccione el color</p></strong>
-                        <label for="rojo">Rojo</label>
-                        <input type="radio" name="color" value="rojo" id="rojo">
-                        <label for="azul">Azul</label>
-                        <input type="radio" name="color" value="azul" id="azul">
-                        <label for="negro">Negro</label>
+                        <label for="rojo">Negro</label>
                         <input type="radio" name="color" value="negro" id="negro">
-                        <label for="verde">Verde</label>
-                        <input type="radio" name="color" value="verde" id="verde">
-                        <label for="marrón">Marrón</label>
-                        <input type="radio" name="color" value="marrón" id="marrón">
+                        <label for="azul">Blanco</label>
+                        <input type="radio" name="color" value="blanco" id="blanco">
+                        <label for="negro">Gris</label>
+                        <input type="radio" name="color" value="gris" id="gris">
                         <div style="padding-top: 1rem;"></div>
                         <input type="submit" value="Realizar pedido">
                     </fieldset>

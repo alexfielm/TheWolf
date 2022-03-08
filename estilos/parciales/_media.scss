@@ -1,0 +1,43 @@
+header{
+    grid-area: header;
+}
+main section#carrusel{
+    grid-area: carrusel;
+}
+main section#contenido{
+    grid-area: pedido;
+    align-content: center;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+@media only screen and (min-width: 1024px){
+    .gridHome{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+            "header"
+            "video"
+            "product"
+            "form"
+            "footer"  
+        ;
+    }
+    #carouselExampleIndicators{
+        height: 480px;
+        width: 350px;
+    .gridPrueba{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+            "header header"
+            "carrusel contenido"
+            "footer footer"
+        ;
+    }
+}

@@ -69,29 +69,31 @@
                     </button>
                   </div>
             </section>
-            <section id="pedido"class="section pedidos container-fluid" style="padding-top: 1rem; padding-bottom: 1rem;">
-                <form action="" method="get" enctype="text/plain" class="pedidos">
-                    <fieldset>
-                        <h2 class="pedidos__h2">Crée su pedido</h2>
-                        <strong><p>Seleccione el talle</p></strong>
-                        <select name="Talle" placeholder="Talle">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XL">XL</option>
-                            <option value="XXL">XXL</option>
-                        </select>
-                        <strong><p>Seleccione el color</p></strong>
-                        <label for="rojo">Negro</label>
-                        <input type="radio" name="color" value="negro" id="negro">
-                        <label for="azul">Blanco</label>
-                        <input type="radio" name="color" value="blanco" id="blanco">
-                        <label for="negro">Gris</label>
-                        <input type="radio" name="color" value="gris" id="gris">
-                        <div style="padding-top: 1rem;"></div>
-                        <input type="submit" value="Realizar pedido">
-                    </fieldset>
-                </form>
+            <section id="pedido"class="section container-fluid" style="padding-top: 1rem; padding-bottom: 1rem;">
+                <div class="card card-body" style="width: 18rem;">
+                    <form action="" method="get" enctype="text/plain" >
+                        <fieldset>
+                            <h2 class="card-title">Crée su pedido</h2>
+                            <strong><p>Seleccione el talle</p></strong>
+                            <select name="Talle" placeholder="Talle">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                            <strong><p>Seleccione el color</p></strong>
+                            <label for="rojo">Negro</label>
+                            <input type="radio" name="color" value="negro" id="negro">
+                            <label for="azul">Blanco</label>
+                            <input type="radio" name="color" value="blanco" id="blanco">
+                            <label for="negro">Gris</label>
+                            <input type="radio" name="color" value="gris" id="gris">
+                            <div style="padding-top: 1rem;"></div>
+                            <input type="submit" value="Realizar pedido">
+                        </fieldset>
+                    </form>
+                </div>
             </section>
             <section id="talles" class="section container-fluid">
                 <div>

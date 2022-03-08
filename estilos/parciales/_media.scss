@@ -1,5 +1,5 @@
-header{
-    grid-area: header;
+header#encabezado{
+    grid-area: encabezado;
 }
 main section#carrusel{
     grid-area: carrusel;
@@ -30,14 +30,14 @@ footer{
     #carouselExampleIndicators{
         height: 480px;
         width: 350px;
+    }
     .gridPrueba{
         display: grid;
         grid-template-columns: repeat(2,50%);
         grid-template-rows: repeat(3,auto);
         grid-template-areas: 
-            "header header"
+            "encabezado encabezado"
             "carrusel contenido"
             "footer footer"
         ;
     }
-}

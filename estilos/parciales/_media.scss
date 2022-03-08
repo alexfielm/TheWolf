@@ -5,7 +5,7 @@ main section#carrusel{
     grid-area: carrusel;
 }
 main section#contenido{
-    grid-area: pedido;
+    grid-area: contenido;
     align-content: center;
 }
 
@@ -41,3 +41,4 @@ footer{
             "footer footer"
         ;
     }
+}

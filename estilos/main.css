@@ -31,15 +31,6 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
-  .gridHome {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: (auto)[5];
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas: "header" "video" "product" "form" "footer";
-  }
   #carouselExampleIndicators {
     height: 480px;
     width: 350px;

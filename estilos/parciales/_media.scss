@@ -20,12 +20,49 @@ footer{
     }
     .gridPrueba{
         display: grid;
-        grid-template-columns: repeat(2,50%);
+        grid-template-columns: repeat(2,auto);
         grid-template-rows: repeat(3,auto);
         grid-template-areas: 
             "encabezado encabezado"
             "carrusel contenido"
             "footer footer"
+        ;
+    }
+}
+@media only screen and (max-width: 768px){
+   
+    #carouselExampleIndicators{
+        height: 480px;
+        width: 350px;
+    }
+    .gridPrueba{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+            "encabezado encabezado"
+            "carrusel contenido"
+            "footer footer"
+        ;
+    }
+}
+@media only screen and (max-width: 320px){
+    #carouselExampleIndicators{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: start;
+        width: 250px;
+        height: 380px;
+    }
+    .gridPrueba{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+            "encabezado"
+            "carrusel"
+            "contenido"
+            "footer"
         ;
     }
 }

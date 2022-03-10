@@ -16,6 +16,10 @@ header#encabezado {
   grid-area: encabezado;
 }
 
+main section#productos {
+  grid-area: productos;
+}
+
 main section#carrusel {
   grid-area: carrusel;
 }
@@ -48,6 +52,15 @@ footer {
         grid-template-rows: repeat(5, auto);
         grid-template-areas: "encabezado" "carrusel" "contenido" "form" "footer";
   }
+  .gridHome {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "encabezado" "carrusel" "productos" "form" "footer";
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -63,6 +76,15 @@ footer {
     -ms-grid-rows: (auto)[5];
         grid-template-rows: repeat(5, auto);
         grid-template-areas: "encabezado" "carrusel" "contenido" "form" "footer";
+  }
+  .gridHome {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "encabezado" "carrusel" "productos" "form" "footer";
   }
 }
 
@@ -89,6 +111,15 @@ footer {
     -ms-grid-rows: (auto)[5];
         grid-template-rows: repeat(5, auto);
         grid-template-areas: "encabezado" "carrusel" "contenido" "form" "footer";
+  }
+  .gridHome {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "encabezado" "carrusel" "productos" "form" "footer";
   }
 }
 

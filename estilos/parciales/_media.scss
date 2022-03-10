@@ -1,6 +1,9 @@
 header#encabezado{
     grid-area: encabezado;
 }
+main section#productos{
+    grid-area: productos;
+}
 main section#carrusel{
     grid-area: carrusel;
 }
@@ -33,6 +36,18 @@ footer{
             "footer"
         ;
     }
+    .gridHome{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+            "encabezado"
+            "carrusel"
+            "productos"
+            "form"
+            "footer"  
+        ;
+    }
 }
 @media only screen and (max-width: 768px){
    
@@ -50,6 +65,18 @@ footer{
             "contenido"
             "form"
             "footer"
+        ;
+    }
+    .gridHome{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+            "encabezado"
+            "carrusel"
+            "productos"
+            "form"
+            "footer"  
         ;
     }
 }
@@ -71,6 +98,18 @@ footer{
             "contenido"
             "form"
             "footer"
+        ;
+    }
+    .gridHome{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+            "encabezado"
+            "carrusel"
+            "productos"
+            "form"
+            "footer"  
         ;
     }
 }

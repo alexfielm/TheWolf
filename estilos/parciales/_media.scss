@@ -14,6 +14,9 @@ main section#contenido{
 main section#form{
     grid-area: form;
 }
+main section#texto{
+    grid-area: texto;
+}
 footer{
     grid-area: footer;
 }
@@ -46,6 +49,16 @@ footer{
             "productos"
             "form"
             "footer"  
+        ;
+    }
+    .gridTexto{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+            "encabezado"
+            "texto"
+            "footer"
         ;
     }
 }

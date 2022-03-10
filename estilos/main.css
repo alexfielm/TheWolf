@@ -34,6 +34,10 @@ main section#form {
   grid-area: form;
 }
 
+main section#texto {
+  grid-area: texto;
+}
+
 footer {
   grid-area: footer;
 }
@@ -60,6 +64,15 @@ footer {
     -ms-grid-rows: (auto)[5];
         grid-template-rows: repeat(5, auto);
         grid-template-areas: "encabezado" "carrusel" "productos" "form" "footer";
+  }
+  .gridTexto {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "encabezado" "texto" "footer";
   }
 }
 
